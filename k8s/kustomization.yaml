@@ -1,0 +1,19 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: activemq-artemis
+
+resources:
+ - namespace.yaml
+ - broker.yaml
+ - service.yaml
+
+configMapGenerator:
+ - name: artemis-logging-config
+   files:
+    - logging.properties
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+
+

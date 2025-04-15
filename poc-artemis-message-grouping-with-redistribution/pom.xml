@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.lokrim</groupId>
+    <artifactId>poc-artemis-producer</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>poc-activemq-artemis</name>
+
+   	<properties>
+		<maven.compiler.release>17</maven.compiler.release>
+		
+		<artemis.version>2.40.0</artemis.version>
+		<log4j.version>2.24.3</log4j.version>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j2-impl</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>artemis-jms-client</artifactId>
+			<version>${artemis.version}</version>
+		</dependency>
+	</dependencies>
+
+</project>

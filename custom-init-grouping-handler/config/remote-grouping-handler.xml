@@ -1,0 +1,5 @@
+<grouping-handler xmlns="urn:activemq:core" name="my-grouping-handler">
+	<type>REMOTE</type>
+	<address>poc-index-request</address>
+	<timeout>10000</timeout>
+</grouping-handler>
